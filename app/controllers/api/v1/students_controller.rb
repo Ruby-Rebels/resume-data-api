@@ -1,4 +1,4 @@
-class StudentController < ApplicationController
+class Api::V1::StudentsController < ApplicationController
   def index
     @students = Student.all
     render 'index.json.jbuilder'
@@ -6,22 +6,26 @@ class StudentController < ApplicationController
 
   def show
     @student = Student.find_by(id: params[:id])
+    @experience = @student.experiences
+    @education = @student.educations
+    @skills = @student.skills
+    @capstone = @student.capstones
     render 'show.json.jbuilder'
   end
 
   def create
     @student = Student.create(
-    first_name: params[:first_name],
-    last_name: params[:last_name],
-    email: params[:email],
-    phone_number: params[:phone_number],
-    short_bio: params[:short_bio],
-    linkedin_url: params[:linkedin_url],
-    twitter_handle: params[:twitter_handle],
-    personal_blog_site_url: params[:personal_blog_site_url],
-    online_resume_url: params[:online_resume_url],
-    github_url: params[:github_url],
-    photo: params[:photo]
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email],
+      phone_number: params[:phone_number],
+      short_bio: params[:short_bio],
+      linkedin_url: params[:linkedin_url],
+      twitter_handle: params[:twitter_handle],
+      personal_blog_site_url: params[:personal_blog_site_url],
+      online_resume_url: params[:online_resume_url],
+      github_url: params[:github_url],
+      photo: params[:photo]
     )
     render 'create.json.jbuilder'
   end

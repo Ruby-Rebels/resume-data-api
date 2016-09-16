@@ -11,3 +11,8 @@ json.personal_blog_site_url student.personal_blog_site_url
 json.online_resume_url student.online_resume_url
 json.github_url student.github_url
 json.photo student.photo
+
+json.experience student.experiences
+json.education student.educations
+json.skills student.skills
+json.capstone student.capstones
