@@ -2,8 +2,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-
-
       get '/skills' => 'skills#index'
       get '/skills/new' => 'skills#new'
       get '/skills/:id' => 'skills#show'
@@ -19,13 +17,17 @@ Rails.application.routes.draw do
       patch '/students/experience' => 'experience#update'
       delete '/students/experience' => 'experience#destroy'
 
+      get '/students/education' => 'education#index'
+      post '/students/education/' => 'education#create'
+      get '/students/:id/education' => 'education#show'
+      patch '/students/id:/education/' => 'education#update'
+      delete'/education' => 'education#destroy'
 
       get '/students' => 'students#index'
       get '/students/:id' => 'students#show'
       post '/students' => 'students#create'
       post '/students/:id' => 'students#update'
       delete '/students/:id' => 'students#destroy'
-
     end
   end
 end
