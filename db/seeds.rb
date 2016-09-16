@@ -4,3 +4,170 @@ Student.create(first_name: "Milhouse", last_name: "Van Houten", user_id: 3, emai
 Student.create(first_name: "Seymour", last_name: "Skinner", user_id: 4, email: "sskinner@university.edu", phone_number: "718-189-4579", short_bio: "Dedicated Educator", linkedin_url: "http://www.linkedin.com/sskinner", twitter_handle: "@sskinner", personal_blog_site_url: "http://www.seymourskinner.com", online_resume_url: "http://www.resume.com/sskinner", github_url: "http://github.com/sskinner", photo: "http://photo.photo")
 Student.create(first_name: "Edna", last_name: "Krabappel", user_id: 5, email: "ekrabappel@university.edu", phone_number: "718-123-8765", short_bio: "Lifelong Teacher", linkedin_url: "http://www.linkedin.com/ekrabappel", twitter_handle: "@ekrabappel", personal_blog_site_url: "http://www.ednakrabappel.com", online_resume_url: "http://www.resume.com/ekrabappel", github_url: "http://github.com/ekrabappel", photo: "http://photo.photo")
 Student.create(first_name: "Martin", last_name: "Prince", user_id: 6, email: "eprince@university.edu", phone_number: "718-123-4579", short_bio: "Scholar at Heart", linkedin_url: "http://www.linkedin.com/mprince", twitter_handle: "@mprince", personal_blog_site_url: "http://www.martinprince.com", online_resume_url: "http://www.resume.com/mprince", github_url: "http://github.com/mprince", photo: "http://photo.photo")
+
+
+
+Experience.create(
+  student_id: 1 ,
+  start_date: 2.year.ago  ,
+  end_date:   Date.today  ,
+  job_title: "entry-level web developer"  ,
+  company_name: "ACLTC"  ,
+  details: "haha, this is good!"
+)
+
+
+
+Experience.create(
+  student_id: 2 ,
+  start_date:  8.year.ago ,
+  end_date:   Date.today  ,
+  job_title: "full_stack web developer"  ,
+  company_name: "Thrillist Media Group"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 3 ,
+  start_date:  1.year.ago ,
+  end_date:   Date.today  ,
+  job_title: "entry-level web developer"  ,
+  company_name: "Thrillist Media Group"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 4 ,
+  start_date:  3.year.ago ,
+  end_date:    Date.today ,
+  job_title: "Front-End Developer"  ,
+  company_name: "ACLTC"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 5 ,
+  start_date:  4.year.ago ,
+  end_date:    Date.today ,
+  job_title: "Back-end web developer"  ,
+  company_name: "yext"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 6 ,
+  start_date:  2.year.ago ,
+  end_date:    Date.today ,
+  job_title: "Front-End Developer"  ,
+  company_name: "Planet Interactive"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 1 ,
+  start_date:  4.year.ago ,
+  end_date:    Date.today ,
+  job_title: "entry-level web developer"  ,
+  company_name: "Thrillist Media Group"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 2 ,
+  start_date:  4.year.ago ,
+  end_date:   Date.today  ,
+  job_title: "entry-level web developer"  ,
+  company_name: "yext"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 3 ,
+  start_date:  7.year.ago ,
+  end_date:    Date.today ,
+  job_title: "Front-End Developer"  ,
+  company_name: "One Rockwell"  ,
+  details: "haha, this is good!"
+)
+
+
+Experience.create(
+  student_id: 4 ,
+  start_date:  1.year.ago ,
+  end_date:    Date.today ,
+  job_title: "entry-level web developer"  ,
+  company_name: "Planet Interactive"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 5 ,
+  start_date:  2.year.ago ,
+  end_date:    Date.today ,
+  job_title: "entry-level web developer"  ,
+  company_name: "One Rockwell"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 6 ,
+  start_date:  4.year.ago ,
+  end_date:    Date.today ,
+  job_title: "Front-End Developer"  ,
+  company_name: "ACLTC"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 1 ,
+  start_date:  11.year.ago ,
+  end_date:    Date.today ,
+  job_title: "entry-level web developer"  ,
+  company_name: "ACLTC"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 2 ,
+  start_date:  10.year.ago ,
+  end_date:    Date.today ,
+  job_title: "entry-level web developer"  ,
+  company_name: "ACLTC"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 3 ,
+  start_date:  2.year.ago ,
+  end_date:   Date.today  ,
+  job_title: "Front-End Developer"  ,
+  company_name: "Planet Interactive"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 4 ,
+  start_date:  3.year.ago ,
+  end_date:    Date.today ,
+  job_title: "Back-end web developer"  ,
+  company_name: "Planet Interactive"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 5 ,
+  start_date:  2.year.ago ,
+  end_date:    Date.today ,
+  job_title: "entry-level web developer"  ,
+  company_name: "One Rockwell"  ,
+  details: "haha, this is good!"
+)
+
+Experience.create(
+  student_id: 6 ,
+  start_date:  1.year.ago ,
+  end_date:    Date.today ,
+  job_title: "Back-end web developer"  ,
+  company_name: "One Rockwell"  ,
+  details: "haha, this is good!"
+)
