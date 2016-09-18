@@ -1,4 +1,4 @@
-class ExperienceController < ApplicationController
+class Api::V1::ExperienceController < ApplicationController
   def index
     @experiences = Experience.all
   end
