@@ -1,1 +1,1 @@
-json.array! @educations, partial: 'education', as: :education
+json.array! @education, partial: 'education', as: :education
