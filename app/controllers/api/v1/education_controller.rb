@@ -1,4 +1,4 @@
-class EducationsController < ApplicationController
+class Api::V1::EducationController < ApplicationController
   def index
     @education = Education.all
   end
@@ -8,6 +8,7 @@ class EducationsController < ApplicationController
 
   def show
     @education = Education.find_by(id: params[:id])
+    render 'show.json.jbuilder'
   end
 
   def create
