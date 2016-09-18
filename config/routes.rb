@@ -10,7 +10,6 @@ Rails.application.routes.draw do
       patch '/skills/:id' => 'skills#update'
       delete '/skills/:id' => 'skills#destroy'
 
-
       get '/students/experience' => 'experience#show'
       get '/students/experience/:id' => 'experience#show'
       post '/students/experience' => 'experience#create'
