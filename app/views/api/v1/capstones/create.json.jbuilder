@@ -1,2 +1,2 @@
-json.partial! 'capstone', capstone: @capstone
+json.partial! 'capstones', capstone: @capstone
 json.status "#{@capstone.name} was created!"

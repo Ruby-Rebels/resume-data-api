@@ -1,1 +1,1 @@
-json.array! @capstone, partial: 'capstone', as: :capstone
+json.array! @capstones, partial: 'capstones', as: :capstone
