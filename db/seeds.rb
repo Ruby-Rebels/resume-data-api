@@ -5,8 +5,6 @@ Student.create(first_name: "Seymour", last_name: "Skinner", user_id: 4, email: "
 Student.create(first_name: "Edna", last_name: "Krabappel", user_id: 5, email: "ekrabappel@university.edu", phone_number: "718-123-8765", short_bio: "Lifelong Teacher", linkedin_url: "http://www.linkedin.com/ekrabappel", twitter_handle: "@ekrabappel", personal_blog_site_url: "http://www.ednakrabappel.com", online_resume_url: "http://www.resume.com/ekrabappel", github_url: "http://github.com/ekrabappel", photo: "http://photo.photo")
 Student.create(first_name: "Martin", last_name: "Prince", user_id: 6, email: "eprince@university.edu", phone_number: "718-123-4579", short_bio: "Scholar at Heart", linkedin_url: "http://www.linkedin.com/mprince", twitter_handle: "@mprince", personal_blog_site_url: "http://www.martinprince.com", online_resume_url: "http://www.resume.com/mprince", github_url: "http://github.com/mprince", photo: "http://photo.photo")
 
-
-
 Experience.create(
   student_id: 1 ,
   start_date: 2.year.ago  ,
@@ -171,3 +169,28 @@ Experience.create(
   company_name: "One Rockwell"  ,
   details: "haha, this is good!"
 )
+
+6.times do
+  capstone = Capstone.create(
+  name: Faker::Company.name,
+  description: Faker::Lorem.paragraph,
+  url: Faker::Internet.url('example.com'),
+  screenshot: Faker::Internet.url('example.com')
+  )
+end
+
+6.times do
+  education = Education.create(
+  start_date: Faker::Date.between_except(10.years.ago, 1.year.from_now, Date.today),
+  end_date: Faker::Date.between_except(5.years.ago, 10.years.from_now, Date.today),
+  degree: Faker::Educator.course,
+  university_name: Faker::University.name,
+  details: Faker::Lorem.paragraph
+  )
+end
+
+6.times do
+  skill = Skill.create(
+  skill_name: Faker::Hacker.adjective
+  )
+end
